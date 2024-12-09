@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Изменяем кириллицу на латиницу по клику</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="nav">01</a></li>
+          <li><a href="../pages/_02.html" class="nav nav_active">02</a></li>
+          <li><a href="../pages/_03.html" class="nav">03</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <img src="../images/passport.jpg" alt="Шаблон паспорта" />
+        <div class="issuedBy">ГУ МДВ РОССИИ ПО Г.МОСКВЕ</div>
+        <div class="dateOfIssue">00.00.0000</div>
+        <div class="departmentCode">0000-0000</div>
+        <div class="receiverSignature">
+          <img
+            src="../images/receiverSignature.png"
+            alt="Подпись принимающего"
+            width="150px"
+          />
+        </div>
+        <div class="ownSignature">
+          <img
+            src="../images/ownSignature.png"
+            alt="Собственная подпись"
+            width="70px"
+          />
+        </div>
+        <div class="surname">ЖИЛЬЦОВ</div>
+        <div class="name">ИВАН</div>
+        <div class="middleName">ДМИТРИЕВИЧ</div>
+        <div class="sex">МУЖ.</div>
+        <div class="dateOfB">12.03.2006</div>
+        <div class="city">ГОРОД МОСКВА</div>
+        <div class="photo">
+          <img src="../images/photo.jpg" alt="Фото" width="110px" />
+        </div>
+        <div class="data">
+          RNPORNHB1GMB&lt;&lt;IVAN&lt;ZHILTSOV&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
+          <br /><br />6932212102RUS5288813M&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;5003037766609879&lt;&lt;&lt;16
+        </div>
+        <div class="number1">
+          00&nbsp;&nbsp;&nbsp;00&nbsp;&nbsp;&nbsp;000000
+        </div>
+        <div class="number2">
+          00&nbsp;&nbsp;&nbsp;00&nbsp;&nbsp;&nbsp;000000
+        </div>
+      </section>
+      <section>
+        <button onclick="changeLanguage()" language="RU">
+          ИЗМЕНИТЬ НА ENG
+        </button>
+      </section>
+      <script src="../scripts/app02.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html" class="nav">01</a></li>
+          <li><a href="../pages/_02.html" class="nav">02</a></li>
+          <li><a href="../pages/_03.html" class="nav nav_active">03</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form
+        action="https://www.bing.com/search?"
+        id="UserEnter"
+        name="UserEnter"
+        target="_blank"
+      >
+        <input type="hidden" name="q" value="search" />
+        <input
+          type="hidden"
+          name="problemConditions"
+          value="Даны вещественные числа: A, B, C. Определить, выполняются ли неравенства A < B < C или A < B > C и какое именно неравенство выполняется."
+        />
+        <div>
+          Даны вещественные числа: A, B, C. Определить, выполняются ли
+          неравенства: <br />
+          A < B < C <span class="inequality_1"></span><br />
+          A < B > C <span class="inequality_2"></span>
+        </div>
+        <div>
+          <label for="A">A:</label>
+          <input type="number" id="A" name="A" />
+          <label for="B">B:</label>
+          <input type="number" id="B" name="B" />
+          <label for="C">C:</label>
+          <input type="number" id="C" name="C" />
+        </div>
+        <div>
+          <button type="button" onclick="inequalitiesChecker()">ОТВЕТ</button>
+          <button type="submit">ОТПРАВИТЬ</button>
+          <button type="button" onclick="resetForm()">СБРОСИТЬ</button>
+        </div>
+        <div class="notification"></div>
+        <input class="results" type="hidden" name="resultsOfInequalities" />
+      </form>
+    </main>
+    <script src="../scripts/app03.js"></script>
+  </body>
+</html>
